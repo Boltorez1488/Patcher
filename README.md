@@ -20,5 +20,5 @@ Modules:
 ASM(a);
 a.mov(eax, 0x64);
 a.jmp(0x1234);
-Patcher::PlaceJit(&a, 0x4444);
+Patcher::PlaceJit(0x4444, &a);
 ```
